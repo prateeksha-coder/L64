@@ -1,6 +1,6 @@
 def powerof4(n):
     count=0
-    if (n&(~(n&(n-1)))):
+    if n > 0 and (n & (n - 1)) == 0:
         while(n>1):
             n>>=1
             count+=1
